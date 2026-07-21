@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AptoMunicipalMadrid.com - Test Policía Municipal Madrid</title>
+<meta name="description" content="Test Policía Municipal Madrid con miles de preguntas de teoría, inglés y psicotécnicos, corregidas al instante y con explicación detallada de cada respuesta.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;color:#111;background:#fff;}
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid #e5e9f0;position:relative;}
+.logo{font-weight:700;font-size:17px;color:#111;}
+.menu-btn{background:none;border:none;font-size:22px;cursor:pointer;color:#111;}
+.nav-right{display:flex;gap:10px;align-items:center;}
+.btn{border-radius:6px;padding:9px 16px;font-size:14px;cursor:pointer;border:1px solid #d7dde5;background:#fff;color:#111;}
+.btn-accent{background:#2f6fd6;border:none;color:#fff;font-weight:600;}
+.dropdown{display:none;position:absolute;top:56px;left:24px;background:#fff;border:1px solid #e5e9f0;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.08);min-width:180px;padding:6px;z-index:20;}
+.dropdown a{display:block;padding:10px 12px;font-size:14px;color:#111;text-decoration:none;border-radius:6px;}
+.dropdown a:hover{background:#f2f6fb;}
+.hero{text-align:center;padding:64px 24px;background:#eaf2fd;}
+.hero h1{font-size:30px;margin-bottom:12px;color:#111;}
+.hero p{font-size:16px;color:#4b5563;max-width:480px;margin:0 auto 26px;}
+section{padding:48px 24px;max-width:1100px;margin:0 auto;}
+h2{text-align:center;font-size:24px;margin-bottom:28px;}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+.plan{border:1px solid #e5e9f0;border-radius:14px;padding:22px 20px;}
+.plan.featured{border:2px solid #2f6fd6;position:relative;}
+.badges{display:flex;gap:6px;margin-bottom:10px;}
+.badge{font-size:11px;font-weight:600;padding:3px 9px;border-radius:6px;}
+.badge-red{background:#fde8e8;color:#b42318;}
+.badge-green{background:#e6f7ee;color:#0f7a45;}
+.plan-name{font-weight:600;font-size:15px;color:#4b5563;}
+.price{font-size:26px;font-weight:700;color:#2f6fd6;margin:8px 0 4px;}
+.price span{font-size:13px;font-weight:400;color:#4b5563;}
+.subprice{font-size:12px;color:#4b5563;margin-bottom:14px;}
+.features{font-size:13.5px;color:#374151;line-height:2;}
+.about{background:#f7f9fc;}
+.about p{max-width:640px;margin:0 auto;text-align:center;font-size:15px;color:#374151;line-height:1.8;}
+footer{text-align:center;padding:24px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e9f0;}
+footer a{color:#9ca3af;}
+</style>
+</head>
+<body>
+
+<header>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">&#9776;</button>
+  <div class="logo">AptoMunicipalMadrid.com</div>
+  <div class="nav-right">
+    <button class="btn">Iniciar sesión</button>
+    <button class="btn">Registrarse</button>
+    <button class="btn btn-accent">Prueba gratis</button>
+  </div>
+  <div class="dropdown" id="dropdown">
+    <a href="#planes">Temario</a>
+    <a href="#planes">Planes</a>
+    <a href="#conocenos">Conócenos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Test Policía Municipal Madrid para aprobar tu oposición</h1>
+  <p>Miles de preguntas por tema, corregidas al instante y con explicación detallada de cada respuesta.</p>
+  <button class="btn btn-accent" style="padding:12px 24px;font-size:15px;">Haz una prueba gratis</button>
+</div>
+
+<section id="planes">
+  <h2>Planes</h2>
+  <div class="plans">
+
+    <div class="plan">
+      <div class="plan-name">Paga mes a mes</div>
+      <div class="plan-name" style="color:#111;font-size:16px;margin-top:4px;">Mensual</div>
+      <div class="price">15,99&euro;<span>/mes</span></div>
+      <div class="features">
+        +30.000 preguntas de teoría<br>
+        +5.000 preguntas de inglés<br>
+        +5.000 ejercicios psicotécnicos<br>
+        +1.200 preguntas de personalidad<br>
+        Podcast específico de Madrid<br>
+        Disponible en PC y app móvil<br>
+        12 exámenes de teoría y 12 de inglés al mes<br>
+        4 psicotécnicos en PDF al mes
+      </div>
+    </div>
+
+    <div class="plan featured">
+      <div class="badges">
+        <span class="badge badge-red">Descuento 19%</span>
+        <span class="badge badge-green">Más popular</span>
+      </div>
+      <div class="plan-name" style="color:#111;font-size:16px;">Trimestral</div>
+      <div class="price">12,99&euro;<span>/mes</span></div>
+      <div class="subprice">38,97 &euro; cada 3 meses</div>
+      <div class="features">
+        Todo lo del plan mensual<br>
+        36 exámenes de teoría y 36 de inglés cada trimestre<br>
+        12 psicotécnicos en PDF cada trimestre<br>
+        Vídeos explicativos de psicotécnicos
+      </div>
+    </div>
+
+    <div class="plan">
+      <span class="badge badge-green">Descuento 44%</span>
+      <div class="plan-name" style="color:#111;font-size:16px;margin-top:8px;">Anual</div>
+      <div class="price">8,99&euro;<span>/mes</span></div>
+      <div class="subprice">107,88 &euro; al año</div>
+      <div class="features">
+        Todo lo del plan trimestral<br>
+        144 exámenes de teoría y 144 de inglés al año<br>
+        48 psicotécnicos en PDF al año<br>
+        Acceso personal en hasta 2 dispositivos
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="conocenos">
+  <h2>Conócenos</h2>
+  <p>Como tú, nosotros también vivimos la oposición, y sabemos lo que cuesta la incertidumbre, las horas de estudio y la exigencia de conseguir la plaza. Por eso creamos un test de Policía Municipal de Madrid con material actualizado y riguroso: miles de preguntas con explicaciones detalladas, esquemas clave y trucos prácticos ajustados al formato oficial del Ayuntamiento. Nuestra apuesta es una preparación honesta y accesible, con un modelo de pago justo, pensado para que entrenes tanto como necesites.</p>
+</section>
+
+<footer id="contacto">&copy; 2026 AptoMunicipalMadrid.com &middot; <a href="/aviso-legal.html">Aviso legal</a> &middot; <a href="/privacidad.html">Privacidad</a></footer>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click', function(){
+  var d = document.getElementById('dropdown');
+  d.style.display = d.style.display === 'block' ? 'none' : 'block';
+});
+</script>
+
+</body>
+</html>
