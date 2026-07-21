@@ -17,6 +17,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:16p
 .dropdown{display:none;position:absolute;top:56px;left:24px;background:#fff;border:1px solid #e5e9f0;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.08);min-width:180px;padding:6px;z-index:20;}
 .dropdown a{display:block;padding:10px 12px;font-size:14px;color:#111;text-decoration:none;border-radius:6px;}
 .dropdown a:hover{background:#f2f6fb;}
+.dropdown-login{display:none;}
 .hero{text-align:center;padding:64px 24px;background:#eaf2fd;}
 .hero h1{font-size:30px;margin-bottom:12px;color:#111;}
 .hero p{font-size:16px;color:#4b5563;max-width:480px;margin:0 auto 26px;}
@@ -42,6 +43,25 @@ footer a{color:#9ca3af;}
 .promo-banner strong{background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;letter-spacing:.5px;}
 .promo-close{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:16px;cursor:pointer;opacity:.8;line-height:1;}
 .promo-close:hover{opacity:1;}
+
+@media (max-width:640px){
+  header{padding:14px 16px;}
+  .logo{font-size:15px;}
+  .nav-right .btn:not(.btn-accent){display:none;}
+  .nav-right{gap:8px;}
+  header .btn{padding:8px 12px;font-size:13px;}
+  .promo-banner{font-size:12px;padding:8px 34px;line-height:1.4;}
+  .promo-close{right:8px;}
+  .hero{padding:40px 18px;}
+  .hero h1{font-size:23px;}
+  .hero p{font-size:14.5px;max-width:100%;}
+  section{padding:36px 18px;}
+  h2{font-size:20px;margin-bottom:20px;}
+  .plans{gap:14px;}
+  .plan{padding:18px 16px;}
+  .about p{font-size:14px;}
+  .dropdown-login{display:block;}
+}
 </style>
 </head>
 <body>
@@ -60,6 +80,8 @@ footer a{color:#9ca3af;}
     <button class="btn btn-accent">Prueba gratis</button>
   </div>
   <div class="dropdown" id="dropdown">
+    <a href="#" class="dropdown-login">Iniciar sesión</a>
+    <a href="#" class="dropdown-login">Registrarse</a>
     <a href="#planes">Temario</a>
     <a href="#planes">Planes</a>
     <a href="#conocenos">Conócenos</a>
