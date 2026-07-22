@@ -57,7 +57,7 @@
 
   <!-- curved title in the ring -->
   <text font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#9c6f22" letter-spacing="2.5">
-    <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle" dy="7">APTO MADRID MUNICIPAL</textPath>
+    <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle" dy="13">APTO MADRID MUNICIPAL</textPath>
   </text>
 
   <!-- balance illustration, scaled to fit inside the inner circle -->
