@@ -18,7 +18,9 @@ header{display:flex;align-items:center;justify-content:space-between;padding:16p
 .dropdown a{display:block;padding:10px 12px;font-size:14px;color:#111;text-decoration:none;border-radius:6px;}
 .dropdown a:hover{background:#f2f6fb;}
 .dropdown-login{display:none;}
-.hero{text-align:center;padding:64px 24px;background:#eaf2fd;}
+.hero{position:relative;overflow:hidden;text-align:center;padding:64px 24px;background:#eaf2fd;}
+.hero::before{content:'';position:absolute;inset:0;background-image:url('/img/balanza-cerebro-libros.svg');background-repeat:no-repeat;background-position:center;background-size:min(680px,90%) auto;opacity:0.14;pointer-events:none;}
+.hero-content{position:relative;z-index:1;}
 .hero h1{font-size:30px;margin-bottom:12px;color:#111;}
 .hero p{font-size:16px;color:#4b5563;max-width:480px;margin:0 auto 26px;}
 section{padding:48px 24px;max-width:1100px;margin:0 auto;}
@@ -90,9 +92,11 @@ footer a{color:#9ca3af;}
 </header>
 
 <div class="hero">
-  <h1>Test Policía Municipal Madrid para aprobar tu oposición</h1>
-  <p>Miles de preguntas por tema, corregidas al instante y con explicación detallada de cada respuesta.</p>
-  <button class="btn btn-accent" style="padding:12px 24px;font-size:15px;">Haz una prueba gratis</button>
+  <div class="hero-content">
+    <h1>Test Policía Municipal Madrid para aprobar tu oposición</h1>
+    <p>Miles de preguntas por tema, corregidas al instante y con explicación detallada de cada respuesta.</p>
+    <button class="btn btn-accent" style="padding:12px 24px;font-size:15px;">Haz una prueba gratis</button>
+  </div>
 </div>
 
 <section id="planes">
