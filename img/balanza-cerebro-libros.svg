@@ -49,6 +49,7 @@
       <feGaussianBlur stdDeviation="5"/>
     </filter>
     <path id="textCircleTop" d="M 137,450 A 313,313 0 0,1 763,450"/>
+    <path id="star" d="M0,-9 L2.12,-2.91 L8.56,-2.78 L3.42,1.11 L5.29,7.28 L0,3.6 L-5.29,7.28 L-3.42,1.11 L-8.56,-2.78 L-2.12,-2.91 Z"/>
   </defs>
 
   <!-- outer ring -->
@@ -59,6 +60,17 @@
   <text font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#9c6f22" letter-spacing="2.5" dominant-baseline="central">
     <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle">APTO MADRID MUNICIPAL</textPath>
   </text>
+
+  <!-- 7 stars (bandera de Madrid), en el arco inferior, opuesto al texto -->
+  <g fill="#c99a44" stroke="#7a5419" stroke-width="1">
+    <use href="#star" transform="translate(744.1,557.1)"/>
+    <use href="#star" transform="translate(677.7,664.8)"/>
+    <use href="#star" transform="translate(574.3,737.3)"/>
+    <use href="#star" transform="translate(450,763)"/>
+    <use href="#star" transform="translate(325.7,737.3)"/>
+    <use href="#star" transform="translate(222.3,664.8)"/>
+    <use href="#star" transform="translate(155.9,557.1)"/>
+  </g>
 
   <!-- balance illustration, scaled to fit inside the inner circle -->
   <g transform="translate(450,450) scale(0.72) translate(-400,-362)">
