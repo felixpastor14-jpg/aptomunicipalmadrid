@@ -48,20 +48,20 @@
     <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="5"/>
     </filter>
-    <path id="textCircleTop" d="M 68,450 A 382,382 0 0,1 832,450"/>
+    <path id="textCircleTop" d="M 87,450 A 363,363 0 0,1 813,450"/>
   </defs>
 
   <!-- outer ring -->
-  <circle cx="450" cy="450" r="420" fill="none" stroke="#2f6fd6" stroke-width="7"/>
-  <circle cx="450" cy="450" r="382" fill="none" stroke="#2f6fd6" stroke-width="4"/>
+  <circle cx="450" cy="450" r="380" fill="none" stroke="#9c6f22" stroke-width="7"/>
+  <circle cx="450" cy="450" r="346" fill="none" stroke="#d9a94c" stroke-width="4"/>
 
   <!-- curved title in the ring -->
-  <text font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#2f6fd6" letter-spacing="5">
+  <text font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#9c6f22" letter-spacing="5">
     <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle">APTO MADRID MUNICIPAL</textPath>
   </text>
 
   <!-- balance illustration, scaled to fit inside the inner circle -->
-  <g transform="translate(450,450) scale(0.72) translate(-400,-362)">
+  <g transform="translate(450,450) scale(0.65) translate(-400,-362)">
 
     <!-- ground shadow -->
     <ellipse cx="400" cy="588" rx="150" ry="16" fill="url(#shadow)"/>
