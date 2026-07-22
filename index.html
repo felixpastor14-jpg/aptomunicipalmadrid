@@ -41,7 +41,11 @@ h2{text-align:center;font-size:24px;margin-bottom:28px;}
 .subprice{font-size:12px;color:#4b5563;margin-bottom:14px;}
 .features{font-size:13.5px;color:#374151;line-height:2;}
 .about{background:#f7f9fc;}
-.about p{max-width:640px;margin:0 auto;text-align:center;font-size:15px;color:#374151;line-height:1.8;}
+.about-inner{display:flex;align-items:center;gap:40px;}
+.about-logo{width:200px;height:200px;flex-shrink:0;}
+.about-text{text-align:left;}
+.about-text h2{text-align:left;margin-bottom:12px;}
+.about-text p{font-size:15px;color:#374151;line-height:1.8;margin:0;}
 footer{text-align:center;padding:24px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e9f0;}
 footer a{color:#9ca3af;}
 
@@ -59,7 +63,11 @@ footer a{color:#9ca3af;}
   h2{font-size:20px;margin-bottom:20px;}
   .plans{gap:14px;}
   .plan{padding:18px 16px;}
-  .about p{font-size:14px;}
+  .about-inner{flex-direction:column;text-align:center;gap:20px;}
+  .about-logo{width:130px;height:130px;}
+  .about-text{text-align:center;}
+  .about-text h2{text-align:center;}
+  .about-text p{font-size:14px;}
   .dropdown-login{display:block;}
 }
 </style>
@@ -146,8 +154,13 @@ footer a{color:#9ca3af;}
 </section>
 
 <section class="about" id="conocenos">
-  <h2>Conócenos</h2>
-  <p>Somos un grupo de personas que quiere aportar su granito de arena para que apruebes la oposición en el menor tiempo posible. Sabemos lo que cuesta la incertidumbre, las horas de estudio y la exigencia de conseguir la plaza, así que hemos puesto todo nuestro esfuerzo en crear un test de Policía Municipal de Madrid con material actualizado y riguroso: miles de preguntas con explicaciones detalladas, esquemas clave y trucos prácticos ajustados al formato oficial del Ayuntamiento. Nuestra apuesta es una preparación honesta y accesible, con un modelo de pago justo, pensado para que entrenes tanto como necesites.</p>
+  <div class="about-inner">
+    <img class="about-logo" src="/img/balanza-cerebro-libros.svg" alt="">
+    <div class="about-text">
+      <h2>Conócenos</h2>
+      <p>Somos un grupo de personas que quiere aportar su granito de arena para que apruebes la oposición en el menor tiempo posible. Sabemos lo que cuesta la incertidumbre, las horas de estudio y la exigencia de conseguir la plaza, así que hemos puesto todo nuestro esfuerzo en crear un test de Policía Municipal de Madrid con material actualizado y riguroso: miles de preguntas con explicaciones detalladas, esquemas clave y trucos prácticos ajustados al formato oficial del Ayuntamiento. Nuestra apuesta es una preparación honesta y accesible, con un modelo de pago justo, pensado para que entrenes tanto como necesites.</p>
+    </div>
+  </div>
 </section>
 
 <footer id="contacto">&copy; 2026 AptoMunicipalMadrid.com &middot; <a href="/aviso-legal.html">Aviso legal</a> &middot; <a href="/privacidad.html">Privacidad</a> &middot; <a href="/condiciones.html">Condiciones</a></footer>
